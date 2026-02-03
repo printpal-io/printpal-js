@@ -1,0 +1,65 @@
+{
+  "name": "printpal",
+  "version": "1.0.0",
+  "description": "Official JavaScript/TypeScript client for PrintPal 3D Model Generation API - Convert images to 3D models for 3D printing",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "printpal",
+    "3d-printing",
+    "3d-model",
+    "image-to-3d",
+    "text-to-3d",
+    "ai",
+    "stl",
+    "glb",
+    "obj",
+    "3d-generation",
+    "api-client",
+    "3d-model-generation",
+    "additive-manufacturing",
+    "rapid-prototyping"
+  ],
+  "author": "PrintPal <support@printpal.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/printpal-io/printpal-js.git"
+  },
+  "homepage": "https://printpal.io",
+  "bugs": {
+    "url": "https://github.com/printpal-io/printpal-js/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0"
+  },
+  "dependencies": {}
+}
