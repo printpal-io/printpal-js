@@ -114,11 +114,11 @@ export class PrintPal {
 
       // Handle errors based on status code
       if (!response.ok) {
-        const data = await response.json().catch(() => ({}));
+        const data = await response.json().catch(() => ({})) as Record<string, unknown>;
         this.handleErrorResponse(response.status, data);
       }
 
-      return await response.json();
+      return await response.json() as T;
     } catch (error) {
       clearTimeout(timeoutId);
 
@@ -214,7 +214,7 @@ export class PrintPal {
   async healthCheck(): Promise<HealthStatus> {
     const url = `${this.baseUrl}/api/health`;
     const response = await fetch(url);
-    return await response.json();
+    return await response.json() as HealthStatus;
   }
 
   // =========================================================================
