@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://printpal.io/static/img/printpal_logo.png" alt="PrintPal Logo" width="200">
+  <img src="https://printpal.io/static/printpal.png" alt="PrintPal Logo" width="200">
 </p>
 
 <h1 align="center">PrintPal JavaScript/TypeScript Client</h1>
