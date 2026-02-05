@@ -5,6 +5,14 @@ All notable changes to the PrintPal JavaScript/TypeScript client will be documen
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2025-02-05
+
+### Changed
+
+- Default quality for image-to-3D generation changed from `DEFAULT` to `SUPER` for best results out of the box
+- This affects `generateFromImage()`, `generateFromBuffer()`, and `generateAndDownload()`
+- `generateFromPrompt()` still defaults to `DEFAULT` since SUPER quality requires an image input
+
 ## [1.0.0] - 2025-02-03
 
 ### Added

@@ -242,7 +242,7 @@ export class PrintPal {
     options: GenerateFromImageOptions = {}
   ): Promise<GenerationResult> {
     const {
-      quality = Quality.DEFAULT,
+      quality = Quality.SUPER,
       format = Format.STL,
       numInferenceSteps = 20,
       guidanceScale = 5.0,
@@ -311,7 +311,7 @@ export class PrintPal {
     options: GenerateFromImageOptions = {}
   ): Promise<GenerationResult> {
     const {
-      quality = Quality.DEFAULT,
+      quality = Quality.SUPER,
       format = Format.STL,
       numInferenceSteps = 20,
       guidanceScale = 5.0,
@@ -653,7 +653,7 @@ export class PrintPal {
     options: GenerateAndDownloadOptions = {}
   ): Promise<string> {
     const {
-      quality = Quality.DEFAULT,
+      quality = Quality.SUPER,
       format,
       pollInterval = 5000,
       timeout,

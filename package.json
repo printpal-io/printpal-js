@@ -1,6 +1,6 @@
 {
   "name": "printpal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official JavaScript/TypeScript client for PrintPal 3D Model Generation API - Convert images to 3D models for 3D printing",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
